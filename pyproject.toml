@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g-wave"
+version = "1.0.0"
+authors = [
+  { name="Stephon Bridges & Gemini", email="author@example.com" },
+]
+description = "G-Wave: A multi-agent AI assistant."
+requires-python = ">=3.10"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langchain-google-genai",
+    "langchain-anthropic",
+    "typer",
+    "python-dotenv",
+]
+
+[tool.setuptools.packages.find]
+include = ["g_wave*"]
+exclude = ["g_wave_workspace*"]
+
+[project.scripts]
+g_wave = "g_wave.main:app"

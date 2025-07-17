@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python3 -m pip install:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(python:*)",
+      "Bash(timeout 10s python -m:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(pkill:*)",
+      "Bash(timeout:*)",
+      "Bash(for f in g_wave_workspace/*.py)",
+      "Bash(do echo \"=== $f ===\")",
+      "Bash(cat:*)",
+      "Bash(done)",
+      "Bash(rm:*)",
+      "Bash(grep:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": []
+  }
+}
